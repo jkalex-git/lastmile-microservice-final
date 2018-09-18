@@ -1,0 +1,33 @@
+server:
+  port: 8200
+
+logging:
+  level:
+    org.springframework.web: ERROR
+    com.real: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file: /AppLogs/last-mile_app.log
+
+
+scheduler:
+  fixedDelay: 3600000
+  intialDelay: 1000
+  
+api:
+  gpsUrl: http://gps-api/distance
+  
+applicationprop:
+  velocity: 60.0   
+  depotFile: /lastmile-config/Depots.txt
+  storeFile: /lastmile-config/Stores.txt  
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    
+spring:
+  application:
+    name: lastmile

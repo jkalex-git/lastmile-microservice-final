@@ -1,0 +1,1 @@
+java -jar lastmile-0.0.1-SNAPSHOT.jar --spring.config.additional-location=file:./lastmile-config/

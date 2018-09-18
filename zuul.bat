@@ -1,0 +1,1 @@
+java -jar zuul-0.0.1-SNAPSHOT.jar --spring.config.additional-location=file:./zuul-config/
